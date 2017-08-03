@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: #504d4d;
+}
+
+.top-slab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #504d4d;
+    height: 150px;
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+    font-size: 4.4em;
+    margin: 0;
+}
+
+.over-wrapper {
+    height: 385px;
+    background: url('images/mario-bg.png');
+    background-repeat: repeat-x;
+}
+
+.wrapper {
+    position: relative;
+    height: 385px;
+    margin: auto;
+}
+
+.parameters-wrapper {
+    background: rgba(30, 30, 30, 0.6);
+}
+
+.parameters {
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: white;
+}
+
+.input-label {
+    margin: auto 10px auto 30px;
+}
+
+.size-indicator {
+    font-size: 1.2em;
+    position: absolute;
+    right: 75px;
+}
+
+#pyramid-container {
+    position: absolute;
+    left: 40%;
+    bottom: 59px;
+}
+
+#pyramid {
+    font-family: "Courier New", monospace;
+    line-height: 0;
+}
+
+.mario-brick, .mario-space {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+}
+
+.mario-space {
+    background: transparent;
+}
+
+/**** Special Colorways ****/
+
+.classic {
+    background: #d46109;
+    border-left: 5px solid #fec9bd;
+    border-top: 5px solid #fec9bd;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.mario-brick.classic::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -9px;
+    background: #d46109;
+    width: 28.28px;
+    height: 1px;
+    transform: rotate(45deg);
+}
+
+.noir {
+    background: #5f5f5f;
+    border-left: 5px solid #c3c3c3;
+    border-top: 5px solid #c3c3c3;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.mario-brick.noir::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -9px;
+    background: #5f5f5f;
+    width: 28.28px;
+    height: 1px;
+    transform: rotate(45deg);
+}
