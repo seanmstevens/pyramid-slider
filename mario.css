@@ -35,17 +35,18 @@ body {
 }
 
 .parameters-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: white;
     background: rgba(30, 30, 30, 0.6);
 }
 
 .parameters {
     position: relative;
-    margin: auto;
-    padding: 10px;
-    display: flex;
+    margin: 0;
+    display: inline-flex;
     justify-content: center;
-    width: 50%;
-    color: white;
 }
 
 .input-label {
@@ -53,9 +54,11 @@ body {
 }
 
 .size-indicator {
+    font-weight: bold;
     font-size: 1.2em;
-    position: absolute;
-    right: 75px;
+    width: 40px;
+    text-align: center;
+    position: relative;
 }
 
 #pyramid-container {
