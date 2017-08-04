@@ -48,10 +48,7 @@ function drawPyramid(height) {
 
 var pyramidSize = document.getElementById('pyramid-size');
 var pyramid = document.getElementById('pyramid');
-var container = document.getElementById('pyramid-container');
-var construction = document.getElementById('construction');
 var selector = document.getElementById('brick-selector');
-pyramid.removeChild(construction);
 
 pyramid.appendChild(drawPyramid(parseInt(pyramidSize.value), selector.value));
 

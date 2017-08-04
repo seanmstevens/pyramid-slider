@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -15,9 +16,9 @@ body {
 }
 
 .title {
+    font-family: 'Press Start 2P', sans-serif;
     color: white;
-    font-weight: 600;
-    font-size: 4.4em;
+    font-size: 2.625em;
     margin: 0;
 }
 
@@ -81,6 +82,20 @@ body {
     background: transparent;
 }
 
+.mario-brick.classic::after,
+.mario-brick.noir::after,
+.mario-brick.royal::after,
+.mario-brick.turtle::after,
+.mario-brick.bullion::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -9px;
+    width: 28.28px;
+    height: 1px;
+    transform: rotate(45deg);
+}
+
 /**** Special Colorways ****/
 
 .classic {
@@ -92,14 +107,7 @@ body {
 }
 
 .mario-brick.classic::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    right: -9px;
     background: #d46109;
-    width: 28.28px;
-    height: 1px;
-    transform: rotate(45deg);
 }
 
 .noir {
@@ -111,12 +119,41 @@ body {
 }
 
 .mario-brick.noir::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    right: -9px;
     background: #5f5f5f;
-    width: 28.28px;
-    height: 1px;
-    transform: rotate(45deg);
+}
+
+.royal {
+    background: #84359e;
+    border-left: 5px solid #ff8ce6;
+    border-top: 5px solid #ff8ce6;
+    border-right: 5px solid #24122b;
+    border-bottom: 5px solid #24122b;
+}
+
+.mario-brick.royal::after {
+    background: #84359e;
+}
+
+.turtle {
+    background: #2a5f3c;
+    border-left: 5px solid #b9d44e;
+    border-top: 5px solid #b9d44e;
+    border-right: 5px solid #142d1c;
+    border-bottom: 5px solid #142d1c; 
+}
+
+.mario-brick.turtle::after {
+    background: #2a5f3c;
+}
+
+.bullion {
+    background: #b5953a;
+    border-left: 5px solid #efe67e;
+    border-top: 5px solid #efe67e;
+    border-right: 5px solid #463f11;
+    border-bottom: 5px solid #463f11;
+}
+
+.mario-brick.bullion::after {
+    background: #b5953a;
 }
